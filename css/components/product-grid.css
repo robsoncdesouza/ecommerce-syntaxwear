@@ -1,0 +1,78 @@
+.card{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    position: relative;
+}
+
+.top1{
+    grid-area: top1;
+    background-image: url(../../images/products/card_imagem.jpg);
+}
+
+.top2{
+    grid-area: top2;
+    background-image: url(../../images/products/roxo-verde-grid.jpg);
+}
+
+.midR{
+    grid-area: midR;
+    background-image: url(../../images/products/futurista-grid.jpg);
+}
+
+.midL{
+    grid-area: midL;
+    background-image: url(../../images/products/modelo-feminino.jpg);
+}
+
+.buttomR{
+    grid-area: buttomR;
+    background-image: url(../../images/products/moderno-grid.jpg);
+}
+
+.buttomL{
+    grid-area: buttomL;
+     background-image: url(../../images/products/preto-azul-grid.jpg);
+}
+
+.products-section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    grid-template-areas: 
+    "top1 top1 top2 top2"
+    "top1 top1 midL midR"
+    "buttomL buttomL midL buttomR";
+    gap: 30px;
+}
+
+.top1-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+.card-title{
+    color: #ededed;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.card-subtitle{
+    color: #ededed;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.cta-group{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
