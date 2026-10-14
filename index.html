@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./css/components/hero.css">
     <link rel="stylesheet" href="./css/components/product-categories.css">
     <link rel="stylesheet" href="./css/components/product-grid.css">
+    <link rel="stylesheet" href="./css/components/footer.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <title>Syntaxwear - Tênis e Sneakers Online</title>
     <meta name="description" content="Compre os melhores tênis e sneakers online na SyantaxWear. Encontre modelos exclusivos, ofertas imperdíveis e frete grátis para todo o Brasil">
   </head>
@@ -23,29 +25,37 @@
         </a>
       </h1>
 
-      <nav class="nav-center" aria-label="Categorias Principais">
-        <ul>
-          <li><a href="#">Masculino</a></li>
-          <li><a href="#">Femnino</a></li>
-          <li><a href="#">Outlet</a></li>
-        </ul>
-      </nav>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="header-navigation">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
 
-      <nav class="nav-right" aria-label="Acesso rápido">
-        <ul>
-          <li><a href="#">Nossas Lojas</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#" aria-label="Minha conta">
-            <img src="./images/icons/user.svg" alt="Minha conta">
-          </a></li>
-          <li><a href="#" aria-label="Ajuda">
-            <img src="images/icons/help.svg" alt="Ajuda">
-          </a></li>
-          <li><a href="#" aria-label="Carrinho">
-            <img src="./images/icons/bag.svg" alt="Carrinho">
-          </a></li>
-        </ul>
-      </nav>
+      <div class="header-navigation" id="header-navigation">
+        <nav class="nav-center" aria-label="Categorias principais">
+          <ul>
+            <li><a href="#">Masculino</a></li>
+            <li><a href="#">Feminino</a></li>
+            <li><a href="#">Outlet</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-right" aria-label="Acesso rápido">
+          <ul>
+            <li><a href="#">Nossas Lojas</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#" aria-label="Minha conta">
+              <img src="./images/icons/user.svg" alt="Minha conta">
+            </a></li>
+            <li><a href="#" aria-label="Ajuda">
+              <img src="images/icons/help.svg" alt="Ajuda">
+            </a></li>
+            <li><a href="#" aria-label="Carrinho">
+              <img src="./images/icons/bag.svg" alt="Carrinho">
+            </a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
@@ -111,7 +121,79 @@
     </main>
 
     <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-newsletter">
+          <p class="footer-heading">Inscreva-se em nosso e-mail</p>
+          <form class="newsletter-form">
+            <label class="sr-only" for="footer-email">Seu e-mail</label>
+            <input id="footer-email" type="email" placeholder="email@email.com" />
+          </form>
 
+          <p class="footer-heading social-heading">Redes sociais</p>
+          <nav class="social-links" aria-label="Redes sociais">
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.8" />
+                <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8" />
+                <circle cx="17.5" cy="6.8" r="1.1" fill="currentColor" />
+              </svg>
+            </a>
+            <a href="#" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M12 2.3a9.55 9.55 0 0 0-8.2 14.46L2.5 21.5l4.84-1.27A9.7 9.7 0 1 0 12 2.3Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" />
+                <path d="M8.35 7.5c-.2-.45-.42-.46-.62-.47h-.53c-.18 0-.48.07-.73.35-.25.27-.96.94-.96 2.3s.99 2.66 1.13 2.84c.14.18 1.92 3.07 4.75 4.18 2.34.92 2.83.74 3.34.69.51-.05 1.64-.67 1.87-1.31.23-.64.23-1.19.16-1.31-.07-.12-.25-.19-.53-.33-.27-.14-1.63-.8-1.88-.89-.25-.09-.43-.14-.61.14-.18.27-.7.89-.86 1.07-.16.18-.32.2-.59.07-.27-.14-1.15-.42-2.2-1.34-.81-.72-1.36-1.61-1.52-1.88-.16-.27-.02-.42.12-.56.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.5-.84-2.05Z" fill="currentColor" />
+              </svg>
+            </a>
+            <a href="#" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M19.6 7.2a6.2 6.2 0 0 1-3.8-1.3v8.2a5.8 5.8 0 1 1-5-5.75v3.2a2.65 2.65 0 1 0 1.8 2.55V2.5h3.2a6.2 6.2 0 0 0 3.8 4.7v0Z" fill="currentColor" />
+              </svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 6.02 4.39 11.02 10.13 11.86v-8.39H7.08v-3.47h3.05V9.43c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.69.23 2.69.23v2.95h-1.51c-1.5 0-1.96.93-1.96 1.89v2.26h3.33l-.53 3.47h-2.8v8.39C19.61 23.09 24 18.09 24 12.07Z" fill="currentColor" />
+              </svg>
+            </a>
+          </nav>
+        </div>
+
+        <nav class="footer-navigation" aria-label="Navegação do rodapé">
+          <div class="footer-column">
+            <a href="#">Masculino</a>
+            <a href="#">Casual</a>
+            <a href="#">Esporte</a>
+            <a href="#">Moderno</a>
+            <a href="#">Futurista</a>
+          </div>
+          <div class="footer-column">
+            <a href="#">Feminino</a>
+            <a href="#">Casual</a>
+            <a href="#">Esporte</a>
+            <a href="#">Moderno</a>
+            <a href="#">Futurista</a>
+          </div>
+          <div class="footer-column">
+            <a href="#">Outlet</a>
+            <a href="#">Masculino</a>
+            <a href="#">Feminino</a>
+          </div>
+          <div class="footer-column">
+            <a href="#">Nossas lojas</a>
+            <a href="#">Loja física</a>
+            <a href="#">Loja online</a>
+          </div>
+          <div class="footer-column">
+            <a href="#">Sobre</a>
+            <a href="#">Quem somos</a>
+            <a href="#">Missão</a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Copyright. All Rights Reserved</p>
+      </div>
     </footer>
+    <script src="./js/navbar.js" defer></script>
   </body>
 </html>

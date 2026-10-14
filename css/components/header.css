@@ -18,6 +18,14 @@
     animation: subiredescer 1.75s infinite ease-in-out;
 }
 
+.menu-toggle{
+    display: none;
+}
+
+.header-navigation{
+    display: contents;
+}
+
 .nav-center ul{
     list-style: none;
     display: flex;
@@ -44,6 +52,14 @@
 
 .nav-right img{
     height: 20px;
+}
+
+.nav-right a[aria-label]{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-right img:hover{
